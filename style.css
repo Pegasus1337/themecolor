@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding : 0 ;
+    overflow :hidden ;  
+    transition-duration : 0.5s ;
+    transition-property : all ;
+    transition-timing-function: ease-in-out;
+}
+
+body{
+    position:relative ;
+    z-index : -50 ;
+}
+
+.toggle-container {
+    background-color : rgba(255, 255, 255, 0.158) ;
+    
+    height : 50px ;
+    width : 150px ;
+    border-radius : 50px ;
+    border : solid 10px #581b98 ; 
+    position : absolute ; 
+    top :15vh ;
+    right : 10vh ;
+    z-index : 1 ;
+}
+
+
+#toggle-inside{
+    background-color : #9c1de7 ;
+    width : 50px ;
+    height :50px ;
+    border-radius : 50% ;
+    margin-left : 3px ;
+    border:none ;
+    outline : none ;
+    color : white ;
+    z-index : 1 ;
+ 
+}
+
+.animation{
+    animation-name : sliding-animation ;
+    animation-duration : 1.7s ;
+    animation-iteration-count: 1;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+
+
+@keyframes sliding-animation{
+    from{
+        transform : translateX(0%) ;
+        margin-left : 3px ;
+    }
+    to{
+        transform : translateX(100%) ;
+        margin-left :47px ;
+    }
+}
+
+.darkmode{
+    background-color : #0e153a ;
+    color :white ;
+}
+
+
+h1{
+    color :#9c1de7 ;
+    font-size : 70px ;
+    font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    margin : 60px ;
+    letter-spacing : 1px ;
+    z-index : 2 ;
+}
+
+
+#paragraph {
+    width : 800px ;
+    margin-left : 60px ;
+    margin-top : 180px ;
+    font-size : 23px ;
+    font-family: Arial, Helvetica, sans-serif ;
+    color : #9e579d ;
+    font-weight : bold ;
+    text-align  : center ;
+    line-height : 35px ;
+    letter-spacing : 2px;
+    z-index : 2 ;
+}
+
+.cirlce-up{
+    clip-path: circle(50% at 95% 21%);
+    position:absolute ; 
+    top:0 ;
+     right : 0 ;
+    background-color : #fc85ae ;
+    width : 60% ;
+    height : 100% ;
+    z-index : 0 ;
+}
+
+#footer {
+    color : rgb(11, 11, 68) ;
+    font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    letter-spacing : 1px ;
+    font-weight : 600 ;
+    font-size : 18px ;
+    z-index:30 ;
+}
+
+.shadow-pink {
+    
+    -webkit-box-shadow: 0px 0px 280px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 280px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 280px 0px rgba(0,0,0,0.75);    
+}
+
+
+
+
+#footer-div{
+    display : block ;
+    position : absolute ;
+    bottom : 10px ;
+    text-align:center ;
+    margin:0 auto ;
+    width : 100% ;
+}
+
+
+.cirlce-up img {
+    position :absolute ; 
+    top : 30vh ;
+    right : 15vh ;
+    width : 100px ;
+    pointer-events: none;
+}
+
+.cirlce-up h4{
+    position : absolute ; 
+    top :60vh ;
+    right : 16vh ;
+    color :#f4ccdd ;
+    font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size : 20px ;
+    transform : rotate(10deg) ;
+}
+
+
